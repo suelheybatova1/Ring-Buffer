@@ -25,6 +25,11 @@ public class RingBufferTest {
                 buffer.createReader();
         assertNull(reader.read());
     }
+
+    public RingBufferTest() {
+        super();
+    }
+
     @Test
     void testWriteAndRead() {
         RingBuffer<String> buffer =
